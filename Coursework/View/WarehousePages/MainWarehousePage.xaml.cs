@@ -1,0 +1,35 @@
+﻿using Coursework.Core;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace Coursework.View.WarehousePages
+{
+    /// <summary>
+    /// Логика взаимодействия для MainWarehousePage.xaml
+    /// </summary>
+    public partial class MainWarehousePage : Page
+    {
+        public MainWarehousePage()
+        {
+            InitializeComponent();
+            DataWarehouseInfo.ItemsSource = Connect.DB.Клиенты.ToList();
+        }
+       
+        private void BtnUpdateClient_Click(object sender, RoutedEventArgs e)
+        {
+            Connect.MyFrame.Navigate(new UpdateWarehousePage(sender));
+        }
+    }
+}

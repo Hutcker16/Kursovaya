@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="40504e03f10c4159862183c58cd02280" Name="Diagram1">
+        <EntityTypeShape EntityType="BD_SokolModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_SokolModel.Доставка" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_SokolModel.Заказы" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_SokolModel.Клиенты" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_SokolModel.Сведения_о_заказе" Width="1.5" PointX="5.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_SokolModel.Сотрудники" Width="1.5" PointX="0.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_SokolModel.Товары" Width="1.5" PointX="3" PointY="6.125" IsExpanded="true" />
+        <AssociationConnector Association="BD_SokolModel.FK_Заказы_Доставка" ManuallyRouted="false" />
+        <AssociationConnector Association="BD_SokolModel.FK_Заказы_Клиенты" ManuallyRouted="false" />
+        <AssociationConnector Association="BD_SokolModel.FK_Заказы_Сотрудники" ManuallyRouted="false" />
+        <AssociationConnector Association="BD_SokolModel.FK_Сведения_о_заказе_Заказы" ManuallyRouted="false" />
+        <AssociationConnector Association="BD_SokolModel.FK_Сведения_о_заказе_Товары" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
